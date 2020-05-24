@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="无锡房产，顺尧房产，无锡买房，无锡二手房，地铁房，房地产新闻，茂业集团&首创百货 | 地产">
+    <meta name="description" content="找无锡市房产，来顺尧，楼盘多，好挑选。及时更新提供房产信息，无锡房地产新闻资讯，及时了解行情">
+    <title>茂业集团&首创百货 | 地产</title>
+    <style>
+            h1{
+            margin-top: 60px;
+        }
+        body {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .head {
+            position: relative;
+        }
+
+        .showimg {
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+
+        .content {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content .box {
+            white-space: nowrap;
+            transition: 1s;
+        }
+
+        .content .box img {
+            width: 350px;
+            height: 300px;
+            margin-left: 0;
+        }
+
+        .left {
+            cursor: pointer;
+            position: absolute;
+            bottom: 110px;
+            height: 80px;
+            width: 30px;
+            background-color: lightgrey;
+            opacity: .7;
+        }
+
+        .left:hover {
+            opacity: 1;
+        }
+
+        .content .left .leftj {
+            position: relative;
+            top: 30px;
+            width: 15px;
+            height: 20px;
+            ;
+        }
+
+        .right:hover {
+            opacity: 1;
+        }
+
+        .right {
+            cursor: pointer;
+            position: absolute;
+            opacity: .7;
+            right: 1px;
+            bottom: 110px;
+            height: 80px;
+            width: 30px;
+            background-color: lightgrey;
+        }
+
+        .content .right .rightj {
+            position: relative;
+            right: -15px;
+            top: 30px;
+            width: 15px;
+            height: 20px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <span>
+            <h1>茂业集团&首创百货 | 地产</h1>
+        </span>
+        <!-- <address>倾力打造</address> -->
+        <img class="showimg" src="../img/mytd/mytd.jpg" alt="">
+        <p>倾力打造
+
+            “无锡小上海”
+            
+            大平层 /地铁口 /学区房 /南长核心</p>
+        <p><strong>均价</strong>:16000元/㎡-17000元/㎡</p>
+        <p><strong>交付时间</strong>：现房</p>
+        <p><strong>得房率</strong>：81%</p>
+        <p><strong>车位数</strong>：2000</p>
+        <p><strong>装修情况</strong>：毛坯</p>
+        <p><strong>物业类型</strong>:住宅</p>
+        <p><strong>物业费</strong>：2.5/㎡</p>
+        <p><strong>物业公司</strong>:深圳崇德物业</p>
+        <p><strong>产权年限</strong>: 70年 </p>
+        <p><strong>层高</strong>:3.15米</p>
+        <p><strong>配套</strong>:商业配套：太湖广场CBD，图书馆丶博物馆丶君来洲际5星级酒店</p>
+        <p><strong>规划</strong>:自带40万方商业综合体-茂业天地购物中心一站式服务配套</p>
+        <p><strong>交通</strong>:地铁1号线清名桥站无缝对接</p>
+        <p><strong>生活设施</strong>沁扬农贸市场丶沃尔玛丶家乐福</p>
+        <p><strong>教育配套</strong>:幼儿园: 清扬幼儿园，沁园实验小学，花园实验幼儿园
+            小学: 清扬实验小学，花园实验小学  
+            中学: 辅仁中学，无锡第六高级中学。</p>
+        <p><strong>医疗配套</strong>:第一人民医院和儿童医院</p>
+        <p><strong>金融配套</strong>:农业，工商，建设，江苏，交通等银行</p>
+    </div>
+    <div class="content">
+        <div class="left"><img class="leftj" src="../img1/zuo.png" alt=""></div>
+        <div class="right"><img class="rightj" src="../img1/zuo.png" alt=""></div>
+        <div class="box" style="margin-left: 0px;">
+            <img src="../img/mytd/mytd2.jpg" alt=""> <img src="../img/mytd/mytd1.jpg" alt=""><img src="../img/mytd/mytd3.jpg" alt=""><img src="../img/mytd/mytd4.jpg"
+                alt=""><img src="../img/mytd/mytd5.jpg" alt=""><img src="../img/mytd/mytd6.jpg" alt=""><img
+                src="../img/mytd/mytd7.jpg" alt=""><img src="../img/mytd/mytd8.jpg" alt=""><img src="../img/mytd/mytd9.jpg"
+                alt=""><img src="../img/mytd/mytd10.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    var imgs = document.getElementsByTagName('img');
+    var box = document.getElementsByClassName('box')[0];
+    var left = document.getElementsByClassName('left')[0];
+    var right = document.getElementsByClassName('right')[0];
+    var dis = (box.children.length - 4) * -350;
+    right.addEventListener('click', function () {
+            if (dis < parseInt(box.style.marginLeft)){
+                box.style.marginLeft = parseInt(box.style.marginLeft) - 350 + 'px';
+            }else{
+            alert('最后一张啦~');
+        }
+        })
+
+    left.addEventListener('click', function () {
+        if (parseInt(box.style.marginLeft)) {
+            box.style.marginLeft = parseInt(box.style.marginLeft) + 350 + 'px';
+        }else{
+            alert('最后一张啦~');
+        }
+
+    })
+</script>
+
+</html>
